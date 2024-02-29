@@ -14,7 +14,6 @@ public class ToDoList implements IToDoList {
         this.history = new Stack<>();
     }
 
-    // Implementing IToDoList interface methods
     @Override
     public void addTask(Task task) {
         // Before making a change, push the current state onto the stack
