@@ -3,23 +3,23 @@ package edu.ucalgary.oop;
 import java.util.Objects;
 
 public class Task {
-    private int id;
+    private String id;
     private String title;
     private boolean isCompleted;
 
     // Constructor
-    public Task(int id, String title, boolean isCompleted) {
+    public Task(String id, String title) {
         this.id = id;
         this.title = title;
-        this.isCompleted = isCompleted;
+        this.isCompleted = false; // Initialize as not completed
     }
 
     // Getter methods for id, title, and isCompleted
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -39,11 +39,9 @@ public class Task {
         this.isCompleted = isCompleted;
     }
 
-
-
     // Implementing the copy method for deep copying task objects
     public Task copy() {
-        return new Task(this.id, this.title, this.isCompleted);
+        return new Task(this.id, this.title);
     }
 
     @Override
