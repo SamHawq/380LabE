@@ -3,6 +3,10 @@ package edu.ucalgary.oop;
 
 import org.junit.Before;
 import org.junit.Test;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 81f445f744cd113522dfcb1691a15d6d7cef5a21
 import static org.junit.Assert.*;
 import java.util.List;
 
