@@ -3,9 +3,6 @@ package edu.ucalgary.oop;
 import java.util.Objects;
 
 public class Task {
-<<<<<<< HEAD
-    private 
-=======
     private int id;
     private String title;
     private boolean isCompleted;
@@ -34,7 +31,6 @@ public class Task {
     public Task copy() {
         return new Task(this.id, this.title, this.isCompleted);
     }
->>>>>>> 81f445f744cd113522dfcb1691a15d6d7cef5a21
 
     @Override
     public boolean equals(Object obj) {
@@ -43,21 +39,11 @@ public class Task {
         Task task = (Task) obj;
         return Objects.equals(id, task.id) &&
                Objects.equals(title, task.title) &&
-<<<<<<< HEAD
-               isCompleted == task.isCompleted; 
-=======
                isCompleted == task.isCompleted;
->>>>>>> 81f445f744cd113522dfcb1691a15d6d7cef5a21
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id, title, isCompleted);
     }
-<<<<<<< HEAD
-
-    
 }
-=======
-}
->>>>>>> 81f445f744cd113522dfcb1691a15d6d7cef5a21
