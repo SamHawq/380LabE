@@ -32,7 +32,6 @@ public class Task {
     }
 
     public boolean isCompleted() {
-        this.isCompleted = true;
         return isCompleted;
     }
 

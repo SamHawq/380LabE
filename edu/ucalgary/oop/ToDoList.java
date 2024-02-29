@@ -29,6 +29,7 @@ public class ToDoList implements IToDoList {
 
         for (Task task : tasks) {
             if (task.getId().equals(taskId)) {
+                task.setCompleted(true);
                 task.isCompleted();
                 return;
             }
