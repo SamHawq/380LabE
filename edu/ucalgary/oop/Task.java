@@ -32,7 +32,7 @@ public class Task {
     }
 
     public boolean isCompleted() {
-        return isCompleted;
+        return this.isCompleted;
     }
 
     public void setCompleted(boolean setValue) {
