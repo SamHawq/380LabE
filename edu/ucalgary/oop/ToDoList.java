@@ -29,7 +29,7 @@ public class ToDoList implements IToDoList {
 
         for (Task task : tasks) {
             if (task.getId().equals(taskId)) {
-                task.isCompleted(true);
+                task.isCompleted();
                 return;
             }
         }
@@ -49,7 +49,7 @@ public class ToDoList implements IToDoList {
         for (Task task : tasks) {
             if (task.getId().equals(taskId)) {
                 task.setTitle(newTitle);
-                task.isCompleted(markAsCompleted);
+                task.setCompleted(markAsCompleted);
                 return;
             }
         }
