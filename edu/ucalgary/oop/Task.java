@@ -31,13 +31,11 @@ public class Task {
         this.title = title;
     }
 
-    public boolean isCompleted() {
+    public boolean isCompleted(boolean setValue) {
+        this.isCompleted = setValue;
         return isCompleted;
     }
 
-    public void setCompleted(boolean isCompleted) {
-        this.isCompleted = isCompleted;
-    }
 
     // Implementing the copy method for deep copying task objects
     public Task copy() {
